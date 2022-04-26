@@ -8,8 +8,13 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
+      //name added f/clarity only needed f/remotes
       name: 'container',
+      //lists projects that container can search to get additional code
       remotes: {
+        //load file at URL if anything in container(bootstrap) requires import
+        //key matches import statement
+        //'products' matches config name f/products webpack file
         products: 'products@http://localhost:8081/remoteEntry.js',
       },
     }),
