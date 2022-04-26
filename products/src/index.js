@@ -1,3 +1,4 @@
+//REMOTE
 import faker from 'faker';
 
 let products = '';
