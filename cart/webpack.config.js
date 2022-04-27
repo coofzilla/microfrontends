@@ -8,6 +8,8 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
+      //NOTE do not name to something that matches id in html; creates bug due to global var creation
+      //console cart in browser to see object created
       name: 'cart',
       filename: 'remoteEntry.js',
       exposes: {
