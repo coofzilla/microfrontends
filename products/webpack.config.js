@@ -17,6 +17,7 @@ module.exports = {
         //if import /ProductsIndex serve src/index
         './ProductsIndex': './src/index',
       },
+      shared: ['faker'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
