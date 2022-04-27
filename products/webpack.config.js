@@ -14,8 +14,8 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         //Aliases filenames
-        //if import /ProductsIndex serve src/index
-        './ProductsIndex': './src/index',
+        //if import /ProductsIndex serve value
+        './ProductsIndex': './src/bootstrap',
       },
       shared: ['faker'],
     }),
